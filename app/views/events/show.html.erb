@@ -1,0 +1,9 @@
+<h1><%= @event.title %></h1>
+<br>
+<br>
+<h3>Max People: <%= @event.max_people %></h3>
+<br>
+<h3>Description: <%= @event.description %></h3>
+<h3>Sign up here:</h3>
+<%= link_to @event.signups, signup_path%>
+  
