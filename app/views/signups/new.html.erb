@@ -1,0 +1,9 @@
+<h1> Sign Up For An Event Here! </h1>
+You must choose an event, the number of people in your party who would like to participate, 
+<%= form_for @signup do |f| %>
+  <h3>  <%= f.label :event_id %>
+    <%= f.collection_select :event_id, Event.all, :id, :title %>
+    <%= f.label :number_of_people%>
+    <%= f.number_field :number_of_people %>
+    <%= f.submit "Signup!" %>
+    <% end %>

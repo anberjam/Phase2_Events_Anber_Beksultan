@@ -1,5 +1,7 @@
 <h1> Check Out All the Events at the County Fair! </h1>
 
+<h3> <li><b> <%= link_to "Click Here To Sign Up For An Event!!", new_signup_path %> </b></li></h3>
+
 <ul>
 <% @events.each do |event| %>
 <li> <%= link_to event.title, event_path(event) %> </li>
