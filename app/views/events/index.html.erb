@@ -1,0 +1,9 @@
+<h1> Check Out All the Events at the County Fair! </h1>
+
+<ul>
+<% @events.each do |event| %>
+<li> <%= link_to event.title, event_path(event) %> </li>
+<li><b> Description: </b> <%= event.description %> </li>
+<% end %>
+
+</ul>
