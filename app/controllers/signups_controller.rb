@@ -9,11 +9,12 @@ class SignupsController < ApplicationController
     end
 
     def create
-     @signup = Signup.new(signup_params)
-        if @signup.save
-            redirect_to @signup
-        #else 
-
+        
+     @signup = Signup.create(signup_params)
+        if @signup.valid?
+            redirect_to signup_path(@signup)
+        else 
+            redirect_to signups_path
         end
     end
 

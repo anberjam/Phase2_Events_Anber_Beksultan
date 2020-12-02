@@ -1,0 +1,17 @@
+<div class="form-container">
+  <%= form_for :session, url: login_path do |f| %>
+    <div class="form-input">
+      <%= f.label :username %>
+      <%= f.text_field :username %>
+    </div>
+
+    <div class="form-input">
+        <%= f.label :password %>
+        <%= f.text_field :password %>
+    </div>
+
+    <%= f.submit class: "form-btn" %>
+    
+  <% end %>
+
+</div>
