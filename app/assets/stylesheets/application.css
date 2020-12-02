@@ -13,3 +13,161 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+     
+    background-color: rgba(59, 59, 59, 0.4);
+    
+    
+
+  }
+ 
+ 
+
+ 
+ 
+
+   
+    .banner {
+      width: 60%;
+      height: 250px;
+      line-height: 200px;
+      text-align: center;
+      background-image: url('banner.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0px auto;
+    }
+ 
+    #banner-header {
+     margin: 0px;
+     font-size: 5em;
+     color: transparent;
+     -webkit-text-stroke: 2px rgb(244, 247, 248);
+     /* line-height: 200px; */
+   }
+  
+   
+   
+    .nav {
+     background-color: rgba(179, 176, 179, 0.8);
+     
+     height: 30px;
+     width: 90%;
+     margin: 0px auto;
+     padding: 0px;
+   }
+   
+    .nav li {
+      border: 1px solid rgb(247, 244, 244);
+      display: inline-block;
+      line-height: 30px;
+      padding: 0px 15px;
+      margin: 0px;
+   
+    }
+   
+    .nav li:hover {
+      background-color: rgba(255,255,255,0.4);
+      transition: 1s;
+    }
+   
+    .nav li a {
+     text-decoration: none;
+     color: rgb(26, 25, 25);
+     font-weight: 800;
+   }
+   
+   
+   .right {
+     float: right;
+   }
+ 
+  
+ 
+ .container {
+   margin: 5px auto;
+   max-width: 87%;
+   background-color: rgba(187, 184, 184, 0.4);
+   padding: 10px;
+   border-radius: 25px;
+   height: 100%;
+ }
+ 
+ 
+ 
+ .form-container {
+   max-width: 300px;
+   margin: 0px auto;
+   background-color: rgba(243, 239, 245, 0.2);
+   padding: 20px;
+   border-radius: 25px;
+   text-align: center;
+ }
+ 
+ .form-btn {
+   background-color: purple;
+   margin-top: 10px;
+   border-radius: 25px;
+ }
+ 
+ .form-input {
+   margin-top: 10px;
+ }
+ 
+ 
+   
+ 
+  .index-container {
+   max-height: 100vh;
+   overflow: scroll;
+   display: flex;
+   flex-flow: row wrap;
+   /* background-color: rgba(255,255,255,0.4); */
+   padding: 0px 10px 0px 10px;
+   margin: 0px auto;
+   border-radius: 25px; 
+   justify-content: space-evenly;
+ }
+ 
+ .index-tile {
+   background-color: rgba(62, 7, 79, 0.2);
+   text-align: center;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 25px; 
+ }
+ 
+ .index-tile:hover {
+   border: 3px solid rgb(62, 7, 79); 
+   background-color: rgba(62, 7, 79, 0.2);
+ }
+ 
+ .index-tile h3 a {
+   text-decoration: none;
+   color: rgb(62, 7, 79);
+   font-weight: 1200;
+ }
+ 
+ .index-img {
+   max-width: 150px;
+ }
+ .show-img {
+   max-width: 250px;
+ }
+ 
+ .index-tile a {
+   text-decoration: none;
+ }
+ 
+ 
+ .show-container {
+   background-color: rgba(51, 50, 50, 0.4);
+   padding: 10px;
+   border-radius: 25px;
+   
+ }
+
+    
+ 
+
