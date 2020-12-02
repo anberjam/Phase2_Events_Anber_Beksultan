@@ -1,5 +1,4 @@
 class SignupsController < ApplicationController
-<<<<<<< HEAD
     
     def index
         @signups = Signup.all
@@ -17,13 +16,10 @@ class SignupsController < ApplicationController
 
         end
     end
-=======
->>>>>>> e815fa9efc710a718f9284f918bf9b8574c8a5a5
 
     def show
         @signup = Signup.find(params[:id])
     end
-<<<<<<< HEAD
 
     def edit
        @signup = Signup.find(params[:id]) 
@@ -45,7 +41,4 @@ class SignupsController < ApplicationController
     def signup_params
         params.require(:signup).permit(:event_id, :time, :number_of_people)
     end
-=======
-    
->>>>>>> e815fa9efc710a718f9284f918bf9b8574c8a5a5
 end
