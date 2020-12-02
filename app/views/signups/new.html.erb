@@ -7,13 +7,8 @@ Please do not sign up more than 4 people for an event.
 <%= form_for @signup do |f| %>
   <h3>  <%= f.label :event_id %>
     <%= f.collection_select :event_id, Event.all, :id, :title %>
-<<<<<<< HEAD
-    <br>
-    <br>
-=======
     <%= f.label :time %>
     <%= f.collection_select :time, Signup.all, :time, :time %>
->>>>>>> eec234575c0bc05893bac2a5c7f05ef476666929
     <%= f.label :number_of_people%>
     <%= f.number_field :number_of_people %>
     <br>
