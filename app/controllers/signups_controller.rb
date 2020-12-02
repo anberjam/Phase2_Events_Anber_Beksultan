@@ -6,17 +6,16 @@ class SignupsController < ApplicationController
 
     def new
      @signup = Signup.new
+     @visitors = Visitor.all
+     @events = Event.all
     end
 
-    def create
-        
+    def create  
      @signup = Signup.create(signup_params)
-        if @signup.valid?
-            redirect_to signup_path(@signup)
-        else 
-            redirect_to signups_path
-        end
+     @signup = @current_visitor.signups << signup.create(signup_params)
+     redirect_to event_path(params[:signup][:event_id])
     end
+    
 
     def show
         @signup = Signup.find(params[:id])
@@ -42,4 +41,6 @@ class SignupsController < ApplicationController
     def signup_params
         params.require(:signup).permit(:event_id, :time, :number_of_people)
     end
+
 end
+

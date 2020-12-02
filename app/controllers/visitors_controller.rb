@@ -1,11 +1,19 @@
 class VisitorsController < ApplicationController
+    skip_before_action :authorized, only: [:new, :create]
+
     def index 
-
+        @visitors = Visitor.all
     end
 
-    def show
+    def show 
         @visitor = Visitor.find(params[:id])
-    end
+        if @visitor == @current_visitor
+          redirect_to events_path
+        else
+           redirect_to events_path 
+           flash[:error] = 'Can only see your own profile!'
+        end 
+      end
 
     def create
         visitor = Visitor.create(visitor_params)
