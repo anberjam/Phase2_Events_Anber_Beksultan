@@ -1,9 +1,10 @@
 class SessionsController < ApplicationController
+    skip_before_action :authorized, only: [:new, :login]
 
   
     def logout
       cookies.delete(:visitor_id)
-      redirect_to new_visitor_path
+      redirect_to events_path
     end 
   
     def new 
@@ -14,7 +15,7 @@ class SessionsController < ApplicationController
   
       if visitor && visitor.authenticate(params[:session][:password])
         cookies[:visitor_id] = visitor.id
-        redirect_to visitors_path
+        redirect_to events_path
       else
         flash[:errors] = "Username or Password does not match" 
         redirect_to new_login_path
