@@ -29,11 +29,11 @@ visitor4 = Visitor.create(username: "Ethan", password: "ethan123")
 visitor5 = Visitor.create(username: "Steven", password: "steven123")
 
 
-Signup.create(visitor_id: visitor1.id, event_id: event1.id, time: "12:00 PM", number_of_people: 3)
-Signup.create(visitor_id: visitor2.id, event_id: event2.id, time: "3:00 PM", number_of_people: 5)
-Signup.create(visitor_id: visitor3.id, event_id: event3.id, time: "2:00 PM", number_of_people: 10)
+Signup.create(visitor_id: visitor1.id, event_id: event1.id, time: "1:00 PM", number_of_people: 3)
+Signup.create(visitor_id: visitor2.id, event_id: event2.id, time: "2:00 PM", number_of_people: 5)
+Signup.create(visitor_id: visitor3.id, event_id: event3.id, time: "3:00 PM", number_of_people: 10)
 Signup.create(visitor_id: visitor4.id, event_id: event4.id, time: "4:00 PM", number_of_people: 4)
-Signup.create(visitor_id: visitor5.id, event_id: event5.id, time: "1:00 PM", number_of_people: 2)
+Signup.create(visitor_id: visitor5.id, event_id: event5.id, time: "5:00 PM", number_of_people: 2)
 
 
 

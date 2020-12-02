@@ -1,0 +1,29 @@
+<% if flash[:errors] %>
+  <ul>
+    <% flash[:errors].each do |error| %>
+      <li><%= error %></li>
+    <% end%>
+  </ul>
+<% end%>
+
+<div class="form-container">
+  <h1>Create an Account 👽</h1>
+
+  <%= form_for @visitor do |f| %>
+    <div class="form-input">
+
+    <div class="form-input">
+      <%= f.label :username  %>
+      <%= f.text_field :username  %>
+    </div>
+
+    <div class="form-input">
+      <%= f.label :password  %>
+      <%= f.text_field :password  %>
+    </div>
+
+
+    <%= f.submit class: "form-btn"%>
+    
+  <% end %>
+</div>
