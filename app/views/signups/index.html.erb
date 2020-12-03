@@ -1,6 +1,13 @@
 
+<% visitor_events = [] %>
 <% @signups.each do |signup| %>
   <%  if signup.visitor_id == @current_visitor.id %>
-    <%= link_to signup.event.title, signup_path(signup) %> <br>
+        <% visitor_events << signup %>
+      <%= link_to signup.event.title, signup_path(signup) %> <br>
+      <% end %>
     <% end %>
+
+      <% if visitor_events.count ==0 %>
+          <%= "You Have Not Currently Signed Up For Any Events" %>
+          
     <% end %>
