@@ -45,7 +45,7 @@ class SignupsController < ApplicationController
 
     private
     def signup_params
-        params.require(:signup).permit(:event_id, :time, :number_of_people)
+        params.require(:signup).permit(:event_id, :time, :number_of_people, :visitor_id)
     end
 
 end
