@@ -4,6 +4,10 @@
 <div class="form-container">
   <h1>Create an Account</h1>
 
+  <% if flash[:errors] %>
+    <%= flash[:errors]%><br>
+    <% end %>
+
   <%= form_for @visitor do |f| %>
     <div class="form-input">
 
