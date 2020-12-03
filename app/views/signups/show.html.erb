@@ -4,3 +4,5 @@
 <strong> For this many people: </strong><%= @signup.number_of_people %><br>
 <%= link_to "Edit Signup", edit_signup_path %><br>
 <%= link_to "See All Your Signups", signups_path %>
+<%= link_to 'Cancel Your Signup', signup_path(@signup),
+            data: {:confirm => 'Are you sure?'}, :method => :delete %>

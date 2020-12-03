@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
   
       if visitor && visitor.authenticate(params[:session][:password])
         cookies[:visitor_id] = visitor.id
-        redirect_to events_path
+        redirect_to signups_path
       else
         flash[:errors] = "Username or Password does not match" 
         redirect_to new_login_path
