@@ -1,5 +1,6 @@
 <h1>SIGNUP CONFIRMATION PAGE</h1> <br><br>
-<strong> You have signed up for: </strong><%= @signup.event.title.upcase  %>
-<strong> At the following time slot: </strong><%= @signup.time %>
-<strong> For this many people: </strong><%= @signup.number_of_people %>
-<% %>
+<strong> You have signed up for: </strong><%= @signup.event.title.upcase  %><br>
+<strong> At the following time slot: </strong><%= @signup.time %><br>
+<strong> For this many people: </strong><%= @signup.number_of_people %><br>
+<%= link_to "Edit Signup", edit_signup_path %><br>
+<%= link_to "See All Your Signups", signups_path %>
