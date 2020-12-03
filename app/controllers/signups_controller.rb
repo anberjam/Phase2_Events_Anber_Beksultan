@@ -13,15 +13,13 @@ class SignupsController < ApplicationController
     def create  
       @signup = Signup.create(signup_params)
       @signup = @current_visitor.signups << Signup.create(signup_params)
-
       redirect_to signup_path(params[:signup][:event_id])
-      
 
     end
     
 
     def show
-        @signup = Signup.find(params[:id])
+        @signup = Signup.find_by(visitor_id: cookies[:visitor_id])
     end
 
     def edit
@@ -42,7 +40,7 @@ class SignupsController < ApplicationController
 
     private
     def signup_params
-        params.require(:signup).permit(:event_id, :time, :number_of_people, :visitor_id)
+        params.require(:signup).permit(:event_id, :time, :number_of_people)
     end
 
 end

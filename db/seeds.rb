@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-#Event.destroy_all
-#Visitor.destroy_all
-#Signup.destroy_all
+ Event.destroy_all
+ Visitor.destroy_all
+ Signup.destroy_all
 
 event1 = Event.create(title:"Face Painting",  max_people: 4, description: "Get cool designs painted on your face or become any creature you've ever dreamed of being!" )
 event2 = Event.create(title:"Rubber Duck Racing", max_people: 10, description: "Borrow or bring your own rubber duck to race down the stream. First place wins a prize!")
@@ -29,11 +29,11 @@ visitor4 = Visitor.create(username: "Ethan", password: "ethan123")
 visitor5 = Visitor.create(username: "Steven", password: "steven123")
 
 
-#Signup.create(visitor_id: visitor1.id, event_id: event1.id, time: "1:00 PM", number_of_people: 3)
-#Signup.create(visitor_id: visitor2.id, event_id: event2.id, time: "2:00 PM", number_of_people: 5)
-#Signup.create(visitor_id: visitor3.id, event_id: event3.id, time: "3:00 PM", number_of_people: 10)
-#Signup.create(visitor_id: visitor4.id, event_id: event4.id, time: "4:00 PM", number_of_people: 4)
-#Signup.create(visitor_id: visitor5.id, event_id: event5.id, time: "5:00 PM", number_of_people: 2)
+Signup.create(visitor_id: visitor1.id, event_id: event1.id, time: "1:00 PM", number_of_people: 3)
+Signup.create(visitor_id: visitor2.id, event_id: event2.id, time: "2:00 PM", number_of_people: 5)
+Signup.create(visitor_id: visitor3.id, event_id: event3.id, time: "3:00 PM", number_of_people: 10)
+Signup.create(visitor_id: visitor4.id, event_id: event4.id, time: "4:00 PM", number_of_people: 4)
+Signup.create(visitor_id: visitor5.id, event_id: event5.id, time: "5:00 PM", number_of_people: 2)
 
 
 
