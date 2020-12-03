@@ -1,5 +1,12 @@
 
+
 <div class="form-container">
+<h1> Log In </h1>
+
+<% if flash[:errors] %>
+    <%= flash[:errors]%><br>
+    <% end %>
+    
   <%= form_for :session, url: login_path do |f| %>
     <div class="form-input">
       <%= f.label :username %>
