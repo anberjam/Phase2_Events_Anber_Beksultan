@@ -13,19 +13,17 @@ class SignupsController < ApplicationController
     def create  
       @signup = Signup.create(signup_params)
       @signup = @current_visitor.signups << Signup.create(signup_params)
-
       redirect_to signup_path(params[:signup][:event_id])
-      
 
     end
     
 
     def show
-        @signup = Signup.find(params[:id])
+        @signup = Signup.find_by(visitor_id: cookies[:visitor_id])
     end
 
     def edit
-       @signup = Signup.find(params[:id]) 
+        @signup = Signup.find_by(visitor_id: cookies[:visitor_id])
     end
 
     def update
@@ -46,4 +44,3 @@ class SignupsController < ApplicationController
     end
 
 end
-
