@@ -34,7 +34,7 @@ class SignupsController < ApplicationController
         redirect_to signup_path(@signup)
     end
 
-    def delete
+    def destroy
         @signup = Signup.find(params[:id])
         @signup.destroy
         redirect_to signups_path
