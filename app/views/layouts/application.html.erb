@@ -22,12 +22,14 @@
     <ul class="nav">
       <li><%= link_to "Events", events_path %></li>
       <li><%= link_to "Sign Up For an Event", new_signup_path %></li>
-      <li><%= link_to "See Your Signups", signups_path %></li>
+      
 
 
       <% if @current_visitor %>
         <li class="right"><%= link_to "logout", logout_path, method: :delete  %></li>
+         <li class="right"><%= link_to "See Your Signups", signups_path %></li>
         <li class="right">Welcome <%= @current_visitor.username %></li>
+
       <% else %>
         <li class="right"><%= link_to "Sign Up", new_visitor_path %></li>
         <li class="right"><%= link_to "Login", new_login_path %></li>

@@ -2,7 +2,11 @@
 
 
 <div class="form-container">
-  <h1>Create an Account</h1>
+  <h1>Create an Account or</h1>
+  <h2> Login</h2>
+  <% if flash[:errors] %>
+    <%= flash[:errors]%><br>
+    <% end %>
 
   <%= form_for @visitor do |f| %>
     <div class="form-input">
@@ -16,11 +20,8 @@
       <%= f.label :password  %>
       <%= f.text_field :password  %>
     </div>
-
-
-
-
-    <%= f.submit class: "form-btn"%>
-    
+    <br>
+    <br>
+    <%= f.submit class: "form-btn"%>    
   <% end %>
 </div>

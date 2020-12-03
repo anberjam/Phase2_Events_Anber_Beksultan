@@ -1,8 +1,15 @@
+<div class="signups_show">
 <h1>SIGNUP CONFIRMATION PAGE</h1> <br><br>
-<strong> You have signed up for: </strong><%= @signup.event.title.upcase  %><br>
-<strong> At the following time slot: </strong><%= @signup.time %><br>
-<strong> For this many people: </strong><%= @signup.number_of_people %><br>
+<strong> You have signed up for: </strong> <h3 style="color:green;"><%= @signup.event.title.upcase  %><br> </h3>
+<strong> At the following time slot: </strong> <h3 style="color:green;"><%= @signup.time %><br> </h3>
+<strong> For this many people: </strong> <h3 style="color:green;"><%= @signup.number_of_people %><br> </h3>
+</div>
+<br>
+<br>
 <%= link_to "Edit Signup", edit_signup_path %><br>
+<br>
 <%= link_to "See All Your Signups", signups_path %>
+<br>
+<br>
 <%= link_to 'Cancel Your Signup', signup_path(@signup),
             data: {:confirm => 'Are you sure?'}, :method => :delete %>

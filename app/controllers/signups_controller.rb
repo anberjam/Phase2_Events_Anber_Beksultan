@@ -23,7 +23,8 @@ class SignupsController < ApplicationController
     end
 
     def edit
-       @signup = Signup.find(params[:id]) 
+    #    @signup = Signup.find(params[:id]) 
+       @signup = Signup.find_by(visitor_id: cookies[:visitor_id])
     end
 
     def update

@@ -23,7 +23,7 @@ class VisitorsController < ApplicationController
         redirect_to signups_path
         else
           flash[:errors] = "Username is already taken"
-          redirect_to new_visitor_path 
+          redirect_to new_visitor_path
     end 
     end
 

@@ -59,7 +59,7 @@
    }
    
     .nav li {
-      border: 1px solid rgb(247, 244, 244);
+      /* border: 1px solid rgb(247, 244, 244); */
       display: inline-block;
       line-height: 30px;
       padding: 0px 15px;
@@ -68,8 +68,8 @@
     }
    
     .nav li:hover {
-      background-color: rgba(255,255,255,0.4);
-      transition: 1s;
+      background-color: rgba(70, 67, 67, 0.4);
+      transition: 0.5s;
     }
    
     .nav li a {
@@ -88,10 +88,11 @@
  .container {
    margin: 5px auto;
    max-width: 87%;
-   background-color: rgba(187, 184, 184, 0.4);
+   background-color: rgba(31, 30, 30, 0.4);
    padding: 10px;
    border-radius: 25px;
    height: 100%;
+
  }
  
  
@@ -99,17 +100,20 @@
  .form-container {
    max-width: 300px;
    margin: 0px auto;
-   background-color: rgba(243, 239, 245, 0.2);
+   background-color: rgba(92, 169, 199, 0.2);
    padding: 20px;
    border-radius: 25px;
    text-align: center;
+   color: white;
  }
+
+
  
- .form-btn {
-   background-color: purple;
+ /* .form-btn {
+   background-color: rgb(250, 249, 250);
    margin-top: 10px;
    border-radius: 25px;
- }
+ } */
  
  .form-input {
    margin-top: 10px;
@@ -117,35 +121,57 @@
  
  
    
- 
+/*  
   .index-container {
    max-height: 100vh;
    overflow: scroll;
    display: flex;
    flex-flow: row wrap;
-   /* background-color: rgba(255,255,255,0.4); */
+   background-color: rgba(141, 144, 145, 0.4);
    padding: 0px 10px 0px 10px;
    margin: 0px auto;
    border-radius: 25px; 
    justify-content: space-evenly;
- }
+ } */
  
  .index-tile {
-   background-color: rgba(62, 7, 79, 0.2);
+   background-color: rgba(235, 231, 236, 0.2);
    text-align: center;
    padding: 10px;
    margin: 10px;
    border-radius: 25px; 
+   font-weight: bolder;
+   color: rgb(226, 218, 218);
  }
+
+ .index-tile a {
+  color: rgb(92, 167, 175);
+}
  
  .index-tile:hover {
-   border: 3px solid rgb(62, 7, 79); 
-   background-color: rgba(62, 7, 79, 0.2);
+   border: 3px solid rgb(135, 224, 240); 
+   background-color: rgba(76, 206, 238, 0.2);
  }
+
+ a {
+  color: rgb(246, 246, 250);
+}
+
+.events_show {
+  color: white;
+}
+
+.signups_new {
+  color: white;
+}
+
+.signups_show {
+  color: white;
+}
  
- .index-tile h3 a {
+ /* .index-tile h3 a {
    text-decoration: none;
-   color: rgb(62, 7, 79);
+   color: rgb(20, 20, 20);
    font-weight: 1200;
  }
  
@@ -166,7 +192,7 @@
    padding: 10px;
    border-radius: 25px;
    
- }
+ } */
 
     
  
