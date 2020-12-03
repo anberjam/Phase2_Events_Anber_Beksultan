@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-#Event.destroy_all
-#Visitor.destroy_all
-#Signup.destroy_all
+Event.destroy_all
+Visitor.destroy_all
+Signup.destroy_all
 
 event1 = Event.create(title:"Face Painting",  max_people: 4, description: "Get cool designs painted on your face or become any creature you've ever dreamed of being!" )
 event2 = Event.create(title:"Rubber Duck Racing", max_people: 10, description: "Borrow or bring your own rubber duck to race down the stream. First place wins a prize!")
