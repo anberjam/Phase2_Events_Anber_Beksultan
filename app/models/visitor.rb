@@ -5,7 +5,7 @@ class Visitor < ApplicationRecord
     has_secure_password
 
     def username
-      "#{self.username}"
+    #  "#{self.username}"
     end 
 
 end

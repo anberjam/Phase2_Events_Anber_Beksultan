@@ -11,15 +11,12 @@ class SignupsController < ApplicationController
     end
 
     def create  
-    #  @signup = Signup.create(signup_params)
-    #  @signup = @current_visitor.signups << @signup.create(signup_params)
-    #  redirect_to event_path(params[:signup][:event_id])
+      @signup = Signup.create(signup_params)
+      @signup = @current_visitor.signups << Signup.create(signup_params)
 
+      redirect_to signup_path(params[:signup][:event_id])
+      
 
-     signup = @current_visitor.signups << Signup.create(signup_params)
-
-
-     redirect_to signup_path(params[:signup][:event_id])
     end
     
 
@@ -40,7 +37,7 @@ class SignupsController < ApplicationController
     def delete
         @signup = Signup.find(params[:id])
         @signup.destroy
-        redirect_to @events_path
+        redirect_to signups_path
     end
 
     private
