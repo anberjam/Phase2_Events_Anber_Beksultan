@@ -1,9 +1,10 @@
+<div class="CONFIRMATION_HEADER">
 <h1> Sign Up For An Event Here! </h1>
 You must choose an event, time, and the number of people in your party who would like to participate. 
 Please do not sign up more than 4 people for an event.
 
 
-
+<div class="CONFIRMATION_HEADER">
 <%= form_for @signup do |f| %>
   <h3>  <%= f.label :event_id %>
     <%= f.collection_select :event_id, Event.all, :id, :title %>
@@ -17,5 +18,7 @@ Please do not sign up more than 4 people for an event.
     <%= f.text_field :time %>
     <br>
     <br>
-    <%= f.submit "Signup!" %>
+    <%= f.submit "Save Changes" %>
     <% end %>
+
+    </div>

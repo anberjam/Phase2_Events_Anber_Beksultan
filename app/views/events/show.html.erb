@@ -1,13 +1,12 @@
-<h1 style="color:white;"><%= @event.title %></h1>
-<br>
-<br>
 <div class="events_show">
+<h1><%= @event.title %></h1>
+<br>
+<br>
  <%= image_tag(@event.img_url, {:style => "width:500px;"})  %>
 <h3><%= @event.description %></h3> 
 <br>
 <h3>Max People: <%= @event.max_people %></h3>
 <br>
-
  </div>
 <h3><%= link_to "Sign Up Here!", new_signup_path %> </h3>
 
